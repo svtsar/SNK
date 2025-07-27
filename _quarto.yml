@@ -10,7 +10,7 @@ book:
   search: 
     location: sidebar
     type: textbox
-  downloads: [pdf, epub]
+  downloads: [epub]
   chapters:
     - index.qmd
     - part: intro.qmd
@@ -30,11 +30,6 @@ format:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: book
-    mainfont: "Mont"
-
-pdf-engine: xelatex
 
 prefer-html: false
 
