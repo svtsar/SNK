@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "c5cf9a17"
+  },
+  "search.qmd": {
+    "search.html": "97a52f6d"
+  },
+  "evaluation.qmd": {
+    "evaluation.html": "960b6666"
+  },
+  "review.qmd": {
+    "review.html": "3dccedc7"
+  },
+  "bibliography.qmd": {
+    "bibliography.html": "04630bc1"
+  },
+  "competitions.qmd": {
+    "competitions.html": "8484e3c8"
+  },
+  "resources.qmd": {
+    "resources.html": "0ec321f7"
+  },
+  "intro.qmd": {
+    "intro.html": "128468fa"
+  }
+}

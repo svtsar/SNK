@@ -1,0 +1,55 @@
+project:
+  type: book
+
+lang: ru
+
+book:
+  title: "База знаний СНК кафедры фармакологии Российского университета медицины"
+  author: "Сергей Царегородцев"
+  date: today
+  search: 
+    location: sidebar
+    type: textbox
+  downloads: [pdf, epub]
+  chapters:
+    - index.qmd
+    - part: intro.qmd
+      chapters: 
+        - search.qmd
+        - evaluation.qmd
+        - review.qmd
+        - bibliography.qmd
+        - competitions.qmd
+        - resources.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: book
+    mainfont: "Mont"
+
+pdf-engine: xelatex
+
+prefer-html: false
+
+editor: visual
+
+callout-appearance: simple
+callout-icon: false
+
+  
+author:
+  - name:
+      given: Сергей
+      family: Царегородцев
+      literal: С.В. Царегородцев
+    orcid: 0000-0002-0254-0516
+    email: sergiotsar@ya.ru
+
+extensions:
+  - quarto-ext/fontawesome
