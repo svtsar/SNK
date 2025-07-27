@@ -21,6 +21,7 @@ book:
         - bibliography.qmd
         - competitions.qmd
         - resources.qmd
+    - telegram.qmd
 
 bibliography: references.bib
 
