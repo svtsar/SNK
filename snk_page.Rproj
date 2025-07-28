@@ -12,17 +12,16 @@ Encoding: UTF-8
 RnwWeave: Sweave
 LaTeX: XeLaTeX
 
+AutoAppendNewline: Yes
+StripTrailingWhitespace: Yes
+LineEndingConversion: Posix
+
 BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
 PackageRoxygenize: Generate documentation with Rcpp
 
-AutoAppendNewline: Yes
-StripTrailingWhitespace: Yes
-
-LineEndingConversion: Posix
-
-Quarto:
-  Path: quarto
-  Render: true
-  Preview: true 
+Quarto: 
+ Path: quarto
+ Render: true
+ Preview: true 
