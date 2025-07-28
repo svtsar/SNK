@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Перенаправление...</title>
+    <script>
+        // Проверяем, если URL содержит 'snk' (маленькие буквы)
+        if (window.location.href.toLowerCase().includes('/snk')) {
+            // Перенаправляем на правильный URL с заглавными буквами
+            window.location.href = 'https://svtsar.github.io/SNK/';
+        } else {
+            // Если это не SNK, показываем обычную 404
+            document.body.innerHTML = '<h1>Страница не найдена</h1><p>Вернуться на <a href="/">главную</a></p>';
+        }
+    </script>
+</head>
+<body>
+    <h1>Перенаправление...</h1>
+    <p>Если перенаправление не произошло автоматически, <a href="https://svtsar.github.io/SNK/">нажмите здесь</a>.</p>
+</body>
+</html> 

@@ -22,14 +22,18 @@ jobs:
         quarto install tinytex
         
     - name: Render
-      run: quarto render
-      
-    - name: Create .nojekyll file
-      run: echo "# This file tells GitHub Pages not to use Jekyll processing" > _book/.nojekyll
-      
+      run: |
+        cd source
+        quarto render --to html
+        
+    - name: Copy files to docs
+      run: |
+        cp -r source/_book/* docs/
+        cp source/_book/.nojekyll docs/
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_book 
+        publish_dir: ./docs 
