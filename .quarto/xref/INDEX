@@ -25,5 +25,8 @@
   },
   "telegram.qmd": {
     "telegram.html": "550b393d"
+  },
+  "media_example.qmd": {
+    "media_example.html": "60f769ab"
   }
 }
