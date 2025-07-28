@@ -10,7 +10,7 @@ book:
   search: 
     location: sidebar
     type: textbox
-  downloads: [epub]
+  downloads: [pdf, epub]
   chapters:
     - index.qmd
     - part: intro.qmd
@@ -31,6 +31,24 @@ format:
     theme:
       - cosmo
       - brand
+    toc: true
+    download-buttons: true
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+    fontsize: 12pt
+    linestretch: 1.5
+    toc: true
+    number-sections: true
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
 
 prefer-html: true
 
