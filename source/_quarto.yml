@@ -34,7 +34,7 @@ format:
     toc: true
     download-buttons: true
   pdf:
-    documentclass: article
+    documentclass: book
     papersize: a4
     geometry:
       - top=2.5cm
