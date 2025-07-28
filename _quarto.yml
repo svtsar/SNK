@@ -31,7 +31,7 @@ format:
       - cosmo
       - brand
 
-prefer-html: false
+prefer-html: true
 
 editor: visual
 
