@@ -9,7 +9,8 @@ echo "=================================="
 # 1. Собираем проект из папки source (HTML и PDF)
 echo "📦 Собираем проект..."
 cd source
-quarto render --to html,pdf
+quarto render --to html
+quarto render --to pdf
 cd ..
 
 # 2. Копируем все файлы из source/_book в docs
